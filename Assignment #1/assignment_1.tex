@@ -1,0 +1,196 @@
+\documentclass[12pt]{article}
+ 
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amsthm,amssymb, mathtools}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{fixltx2e}
+\usepackage[shortlabels]{enumitem}
+\usepackage{mathrsfs}
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+ 
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{question}[2][Question]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newcommand{\textfrac}[2]{\dfrac{\text{#1}}{\text{#2}}}
+
+\DeclareMathOperator{\proj}{proj}
+\newcommand{\vct}{\mathbf}
+\newcommand{\vctproj}[2][]{\proj_{\vct{#1}}\vct{#2}}
+
+\begin{document}
+
+\title{Advanced Mathematical Statistics: Assignment 1}
+
+\author{Chris Hayduk}
+\date{September 19, 2019}
+
+\maketitle
+
+\begin{problem}{3.4}
+\end{problem}
+
+\begin{enumerate}[label=\alph*)]
+	\item $\vct{y}_1 = \begin{bmatrix}
+           3.497900 \\
+           2.485475 \\
+           1.782875 \\
+           1.725450 \\
+           1.645575 \\
+           1.469800
+         \end{bmatrix}$\\
+         
+         Then we have,
+         \begin{align*}
+         	\vctproj[1]{y_1} &= \frac{\vct{y'_1}\vct{1}}{\vct{1}'\vct{1}}\vct{1}\\
+         	&= \frac{12.607075}{6}\vct{1}\\
+         	&= (2.10117917)\vct{1}\\
+         	&= \begin{bmatrix}
+           2.10117917 \\
+           2.10117917 \\
+           2.10117917 \\
+           2.10117917 \\
+           2.10117917 \\
+           2.10117917
+         \end{bmatrix}
+         \end{align*}
+         
+	\item We have $\overline{x}_1 = \frac{1}{6}(\sum_{i = 1}^{6} x_{1_i}) = 2.10117917$\\
+	
+		 Thus,
+		  \begin{align*}
+			\vct{d}_1 = \vct{y}_1 - \overline{x}_1\vct{1} &= \vct{y}_1 - (2.10117917)\vct{1}\\
+			&= \begin{bmatrix}
+           1.39672083 \\
+           0.38429583 \\
+           -0.31830417 \\
+           -0.37572917 \\
+           -0.45560417 \\
+           -0.63137917
+           \end{bmatrix}
+		  \end{align*}
+		  
+		Furthermore, $L_{\vct{d}_1} = \sqrt{\vct{d}'_1\vct{d}_1} = 1.7167461$\\
+		
+		The sample standard deviation is given by 
+		\begin{align*}
+		\sqrt{\frac{1}{6} \sum_{i = 1}^{6} (y_{1_i} - \overline{x}_1)^2} &= \sqrt{\frac{1}{6} \vct{d}'_1\vct{d}_1}\\
+		&= \frac{1}{\sqrt{6}} \sqrt{\vct{d}'_1\vct{d}_1}\\
+		&= \frac{1}{\sqrt{6}} L_{\vct{d}_1}\\
+		&= \frac{1}{\sqrt{6}}(1.7167461)\\
+		&\approx 0.70085866
+		\end{align*}
+		
+		Thus, the sample standard deviation of $\vct{y}_1$ is given by $\frac{1}{\sqrt{6}} L_{\vct{d}_1}$.
+	
+	\item $L_{\vct{y}_1 - \overline{x}_1\vct{1}} = L_{\vct{d}_1} = \sqrt{\vct{d}'_1\vct{d}_1} = 1.7167461$\\
+	
+	$L_{\vct{y}_1} = \sqrt{\vct{y}'_1\vct{y}_1} = 5.425582$
+	
+	$L_{\overline{x}_1\vct{1}} = \sqrt{\overline{x}_1\vct{1}'\overline{x}_1\vct{1}} = 5.14681682$
+	
+	\item $\vct{y}_2 = \begin{bmatrix}
+           0.623 \\
+           0.593 \\
+           0.512 \\
+           0.500 \\
+           0.463 \\
+           0.395
+         \end{bmatrix}$\\
+         
+         Then we have,
+         \begin{align*}
+         	\vctproj[1]{y_2} &= \frac{\vct{y'_2}\vct{1}}{\vct{1}'\vct{1}}\vct{1}\\
+         	&= \frac{3.086}{6}\vct{1}\\
+         	&= (0.51433)\vct{1}\\
+         	&= \begin{bmatrix}
+           0.51433 \\
+           0.51433 \\
+           0.51433 \\
+           0.51433 \\
+           0.51433 \\
+           0.51433
+         \end{bmatrix}
+         \end{align*}
+         
+         We have $\overline{x}_2 = \frac{1}{6}(\sum_{i = 1}^{6} x_{2_i}) = 0.51433$\\
+         
+         Thus,
+		  \begin{align*}
+			\vct{d}_2 = \vct{y}_2 - \overline{x}_2\vct{1} &= \vct{y}_2 - (0.51433)\vct{1}\\
+			&= \begin{bmatrix}
+           0.10867 \\
+           0.07867 \\
+           -0.00233 \\
+           -0.01433 \\
+           -0.05133 \\
+           -0.11933
+           \end{bmatrix}
+		  \end{align*}
+		  
+		  Furthermore, $L_{\vct{d}_2} = \sqrt{\vct{d}'_2\vct{d}_2} = 0.187305$\\
+		  
+		The sample standard deviation is given by 
+		\begin{align*}
+		\sqrt{\frac{1}{6} \sum_{i = 1}^{6} (y_{2_i} - \overline{x}_2)^2} &= \sqrt{\frac{1}{6} \vct{d}'_2\vct{d}_2}\\
+		&= \frac{1}{\sqrt{6}} \sqrt{\vct{d}'_2\vct{d}_2}\\
+		&= \frac{1}{\sqrt{6}} L_{\vct{d}_2}\\
+		&= \frac{1}{\sqrt{6}}(0.187305)\\
+		&\approx 0.0764671
+		\end{align*}
+		
+		Thus, the sample standard deviation of $\vct{y}_2$ is given by $\frac{1}{\sqrt{6}} L_{\vct{d}_2}$.
+		
+		$L_{\vct{y}_2 - \overline{x}_2\vct{1}} = L_{\vct{d}_2} = \sqrt{\vct{d}'_2\vct{d}_2} = 0.187305$\\
+	
+		$L_{\vct{y}_2} = \sqrt{\vct{y}'_2\vct{y}_2} = 1.27370$
+	
+		$L_{\overline{x}_2\vct{1}} = \sqrt{\overline{x}_2\vct{1}'\overline{x}_2\vct{1}} = 1.25985$
+	
+	\item $\cos{\theta} = \frac{\vct{d}'_1\vct{d}_2}{L_{\vct{d}_1}L_{\vct{d}_2}} = \frac{0.28686869}{1.7167461(0.187305)} \approx 0.89212910878$\\
+	
+	$\implies \theta = \arccos(0.89212910878) \approx 0.4687601612$
+
+\end{enumerate}
+
+\begin{problem}{3.7}
+\end{problem}
+
+\begin{problem}{3.8a}
+\end{problem}
+
+\begin{problem}{3.11}
+\end{problem}
+
+\begin{problem}{3.12}
+\end{problem}
+
+\begin{problem}{3.13}
+\end{problem}
+
+\begin{problem}{3.14}
+\end{problem}
+
+\begin{problem}{3.16}
+\end{problem}
+
+\begin{problem}{3.17}
+\end{problem}
+
+\begin{problem}{3.18}
+\end{problem}
+
+\end{document}
