@@ -1,0 +1,115 @@
+\documentclass[12pt]{article}
+ 
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amsthm,amssymb, mathtools}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{fixltx2e}
+\usepackage[shortlabels]{enumitem}
+\usepackage{mathrsfs}
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+ 
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{question}[2][Question]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newcommand{\textfrac}[2]{\dfrac{\text{#1}}{\text{#2}}}
+
+\DeclareMathOperator{\proj}{proj}
+\newcommand{\vct}{\mathbf}
+\newcommand{\vctproj}[2][]{\proj_{\vct{#1}}\vct{#2}}
+
+\begin{document}
+
+\title{Advanced Mathematical Statistics: Assignment 2}
+
+\author{Chris Hayduk}
+\date{October 3, 2019}
+
+\maketitle
+
+<<echo=F, results = 'hide', warning=FALSE, message=FALSE>>=
+# set the global chunk options
+opts_chunk$set(message=FALSE, # don't print R messages in pdf -- CHANGE TO FALSE WHEN SUBMITTING FINAL VERSION!!!
+               warning=FALSE) # don't print warnings in pdf -- CHANGE TO FALSE WHEN SUBMITTING FINAL VERSION!!!
+
+# load .RData files, .R files, etc.
+# R packages required
+suppressMessages(library(tidyverse, quietly=TRUE, warn.conflicts = FALSE, verbose=FALSE))
+suppressMessages(library(gridExtra, quietly=TRUE, warn.conflicts = FALSE, verbose=FALSE))
+suppressMessages(library(qwraps2, quietly=TRUE, warn.conflicts = FALSE,verbose = FALSE))
+suppressMessages(library(broom, quietly=TRUE, warn.conflicts = FALSE,verbose = FALSE))
+suppressMessages(library(latex2exp, quietly=TRUE, warn.conflicts = FALSE,verbose = FALSE))
+suppressMessages(library(mvtnorm, quietly=TRUE, warn.conflicts = FALSE,verbose = FALSE))
+suppressMessages(library(scatterplot3d, quietly=TRUE, warn.conflicts = FALSE,verbose = FALSE))
+@
+
+
+\begin{problem}{4.2}
+\end{problem}
+
+
+\begin{problem}{4.3}
+\end{problem}
+
+\begin{problem}{4.4}
+\end{problem}
+
+\begin{problem}{4.5}
+\end{problem}
+
+\begin{problem}{4.6}
+\end{problem}
+
+\begin{problem}{4.7}
+\end{problem}
+
+\begin{problem}{4.10}
+\end{problem}
+
+\begin{problem}{4.11}
+\end{problem}
+
+\begin{problem}{4.12}
+\end{problem}
+
+\begin{problem}{4.13}
+\end{problem}
+
+\begin{problem}{4.14}
+\end{problem}
+
+\begin{problem}{4.15}
+\end{problem}
+
+\begin{problem}{4.16}
+\end{problem}
+
+\begin{problem}{4.17}
+\end{problem}
+
+\begin{problem}{4.18}
+\end{problem}
+
+\begin{problem}{4.19}
+\end{problem}
+
+\begin{problem}{4.20}
+\end{problem}
+
+\begin{problem}{4.21}
+\end{problem}
+
+\end{document}
