@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.12.28)  30 SEP 2019 17:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.12.28)  2 OCT 2019 21:40
 entering extended mode
 **./assignment_2.tex
 (assignment_2.tex
@@ -623,26 +623,44 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 LaTeX Font Info:    Try loading font information for U+rsfs on input line 91.
 ("C:\Users\Chris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\jknappen\ursfs.fd"
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-) [1
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 101.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 101.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 101.
+ [1
 
 {C:/Users/Chris/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 (assignment_2.aux) ) 
 Here is how much of TeX's memory you used:
- 4763 strings out of 492970
- 70846 string characters out of 3126593
- 136307 words of memory out of 3000000
- 8518 multiletter control sequences out of 15000+200000
- 29482 words of font info for 39 fonts, out of 3000000 for 9000
+ 4794 strings out of 492970
+ 71233 string characters out of 3126593
+ 138307 words of memory out of 3000000
+ 8542 multiletter control sequences out of 15000+200000
+ 42012 words of font info for 57 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,6n,32p,281b,202s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Chris/AppData/Local/Programs/MiKTeX 2.9/fonts/enc
-/dvips/lm/lm-ec.enc}<C:/Users/Chris/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
-e1/public/lm/lmbx12.pfb><C:/Users/Chris/AppData/Local/Programs/MiKTeX 2.9/fonts
-/type1/public/lm/lmr12.pfb><C:/Users/Chris/AppData/Local/Programs/MiKTeX 2.9/fo
-nts/type1/public/lm/lmr17.pfb>
-Output written on assignment_2.pdf (1 page, 74591 bytes).
+/dvips/lm/lm-rm.enc}{C:/Users/Chris/AppData/Local/Programs/MiKTeX 2.9/fonts/enc
+/dvips/lm/lm-mathex.enc}{C:/Users/Chris/AppData/Local/Programs/MiKTeX 2.9/fonts
+/enc/dvips/lm/lm-mathsy.enc}{C:/Users/Chris/AppData/Local/Programs/MiKTeX 2.9/f
+onts/enc/dvips/lm/lm-mathit.enc}{C:/Users/Chris/AppData/Local/Programs/MiKTeX 2
+.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Users/Chris/AppData/Local/Programs/MiKTeX 2
+.9/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Chris/AppData/Local/Programs/MiKT
+eX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Users/Chris/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Chris/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Chris/AppData/Local/Pr
+ograms/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Users/Chris/AppData/Local
+/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Users/Chris/AppData/Lo
+cal/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Users/Chris/AppData/
+Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/Chris/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Chris/Ap
+pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb>
+Output written on assignment_2.pdf (1 page, 134157 bytes).
 PDF statistics:
- 19 PDF objects out of 1000 (max. 8388607)
+ 53 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
