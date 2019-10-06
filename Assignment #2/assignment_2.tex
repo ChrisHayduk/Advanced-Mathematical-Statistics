@@ -1,6 +1,6 @@
 \documentclass[12pt]{article}\usepackage[]{graphicx}\usepackage[]{color}
-%% maxwidth is the original width if it is less than linewidth
-%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+% maxwidth is the original width if it is less than linewidth
+% otherwise use linewidth (to make sure the graphics do not exceed the margin)
 \makeatletter
 \def\maxwidth{ %
   \ifdim\Gin@nat@width>\linewidth
@@ -122,10 +122,79 @@ to be the surface of the ellipsoid containing 50\% of the probability. The graph
 \includegraphics[width=\maxwidth]{figure/unnamed-chunk-2-1} 
 
 \end{knitrout}
-
 \end{enumerate}
 
 \begin{problem}{4.3}
+\end{problem}
+
+\begin{enumerate}[a)]
+
+\item $X_1$ and $X_2$ are not independent because $\sigma_{12} = \sigma_{21} = -2 \neq 0$.
+
+\item $X_2$ and $X_3$ are independent because $\sigma_{23} = \sigma_{32} = 0$.
+
+\item If we partition the covariance matrix into $(X_1, X_2)$ and $X_3$ partitions, we get
+\begin{align*}
+\left(\begin{array}{@{}cc|c@{}}
+    1 & -2 & 0 \\
+    -2 & 5 & 0 \\\hline
+    0 & 0 & 2
+  \end{array}\right)
+\end{align*}
+
+Thus, we can see that the two diagonal sections of the matrix have the forms $\vct{0}, \vct{0}'$. As a result, $(X_1, X_2)$ and $X_3$ are independent.
+
+\item Let $\vct{A} = \begin{bmatrix} \frac{1}{2} & \frac{1}{2} & 0 \\ 0 & 0 & 1\end{bmatrix}$. From Result 4.3, we know $\vct{A}\vct{X}$ is distributed as $N_q(\vct{A}\vct{\mu}, \vct{A}\vct{\Sigma}\vct{A}')$ with $q = 2$ in this case.
+
+So we have,
+\begin{align*}
+\vct{A}\vct{\Sigma}\vct{A}' &= \begin{bmatrix} \frac{1}{2} & \frac{1}{2} & 0 \\ 0 & 0 & 1\end{bmatrix} \begin{bmatrix} 1 & -2 & 0 \\ -2 & 5 & 0 \\ 0 & 0 & 2 \end{bmatrix} \begin{bmatrix} \frac{1}{2} & 0 \\ \frac{1}{2} & 0 \\ 0 & 1\end{bmatrix}\\
+&= \begin{bmatrix} -\frac{1}{2} & \frac{3}{2} & 0 \\ 0 & 0 & 2\end{bmatrix} \begin{bmatrix} \frac{1}{2} & 0 \\ \frac{1}{2} & 0 \\ 0 & 1\end{bmatrix}\\
+&= \begin{bmatrix} \frac{1}{2} & 0 \\ 0 & 2 \end{bmatrix}
+\end{align*}
+
+As can be clearly seen from the above matrix, $\vct{A}\vct{\Sigma}\vct{A}'$, the covariance between $\frac{X_1 + X_2}{2}$ and $X_3$ is 0. As a result, $\frac{X_1 + X_2}{2}$ and $X_3$ are independent.
+
+\item Let $\vct{A} = \begin{bmatrix} 0 & 1 & 0 \\ -\frac{5}{2} & 1 & -1\end{bmatrix}$. From Result 4.3, we know $\vct{A}\vct{X}$ is distributed as $N_q(\vct{A}\vct{\mu}, \vct{A}\vct{\Sigma}\vct{A}')$ with $q = 2$ in this case.
+
+So we have,
+\begin{align*}
+\vct{A}\vct{\Sigma}\vct{A}' &= \begin{bmatrix} 0 & 1 & 0 \\ -\frac{5}{2} & 1 & -1\end{bmatrix} \begin{bmatrix} 1 & -2 & 0 \\ -2 & 5 & 0 \\ 0 & 0 & 2 \end{bmatrix} \begin{bmatrix} 0 & -\frac{5}{2} \\ 1 & 1 \\ 0 & -1\end{bmatrix}\\
+&= \begin{bmatrix} -2 & 5 & 0 \\ -\frac{9}{2} & 10 & -2\end{bmatrix} \begin{bmatrix} 0 & -\frac{5}{2} \\ 1 & 1 \\ 0 & -1\end{bmatrix}\\
+&= \begin{bmatrix} 5 & 10 \\ 10 & \frac{93}{4} \end{bmatrix}
+\end{align*}
+
+We can see from the above matrix that the covariance between the random variables is not 0. Thus, $X_2$ and $X_2 - \frac{5}{2}X_1 - X_3$ are not independent.
+\end{enumerate}
+
+\begin{problem}{4.4}
+\end{problem}
+
+\begin{enumerate}[a)]
+
+\item Let $A = \begin{bmatrix} 3 & -2 & 1 \end{bmatrix}$. By Result 4.3, $3X_1 - 2X_2 + X_3$ is distributed as $N_1(\vct{A}\vct{\mu}, \vct{A}\vct{\Sigma}\vct{A}')$ with mean vector and covariance matrix,
+\begin{align*}
+&\vct{A}\vct{\mu} = 6 + 6 + 1 = 13\\
+&\vct{A}\vct{\Sigma}\vct{A}' = \begin{bmatrix} 2 & -1 & 1 \end{bmatrix}\vct{A}' = 6 + 2 + 1 = 9
+\end{align*}
+
+\item Let $A = \begin{bmatrix} 0 & 1 & 0 \\ -a_1 & 1 & -a_2 \end{bmatrix}$.\\
+
+Now find $\vct{A}\vct{\Sigma}\vct{A}'$:
+\begin{align*}
+\vct{A}\vct{\Sigma}\vct{A}' &= \begin{bmatrix} 1 & 3 & 2 \\ -a_1 + 1 - a_2 & -a_1 + 3 - 2a_2 & a_1 + 2 - 2a_2 \end{bmatrix}\begin{bmatrix} 0 & -a_1 \\ 1 & 1 \\ 0 & -a_2 \end{bmatrix}\\
+&= \begin{bmatrix} 3 & -a_1 + 3 - 2a_2 \\ -a_1 + 3 - 2a_2 & (-a_1)^2 - 2a_1 - 2a_1a_2 + 3 - 4a_2 + 2(-a_2)^2  \end{bmatrix}
+\end{align*}
+
+In order for the covariance to be 0 (ie. $X_2$ and $-a_1X_1 + X_2 - a_3X_3$ independent), we need $-a_1 + 3 - 2a_2 = 0$. That is, $a_1 + 2a_2 = 3$. For instance, take $a_1 = 1$ and $a_2 = 1$. Then we have,
+\begin{align*}
+\vct{A}\vct{\Sigma}\vct{A}' = \begin{bmatrix} 3 & 0 \\ 0 & -2 \end{bmatrix}
+\end{align*}
+\end{enumerate}
+
+Thus, if $\vct{a} = \begin{bmatrix} a_1 \\ a_2 \end{bmatrix} = \begin{bmatrix} 1 \\ 1 \end{bmatrix}$, then we have that $X_2$ and $X_2 - \vct{a}'\begin{bmatrix} X_1 \\ X_3 \end{bmatrix}$ are independent.
+
+\begin{problem}{4.5}
 \end{problem}
 
 \begin{enumerate}[a)]
@@ -136,17 +205,7 @@ to be the surface of the ellipsoid containing 50\% of the probability. The graph
 
 \item
 
-\item
-
-\item
-
 \end{enumerate}
-
-\begin{problem}{4.4}
-\end{problem}
-
-\begin{problem}{4.5}
-\end{problem}
 
 \begin{problem}{4.6}
 \end{problem}
