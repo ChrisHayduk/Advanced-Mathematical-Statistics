@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.12.28)  2 OCT 2019 21:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.12.28)  5 OCT 2019 23:55
 entering extended mode
 **./assignment_2.tex
 (assignment_2.tex
@@ -630,37 +630,44 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 101.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 101.
+Package color Info: Redefining color shadecolor on input line 121.
+<figure/unnamed-chunk-2-1.pdf, id=1, 505.89pt x 505.89pt>
+File: figure/unnamed-chunk-2-1.pdf Graphic file (type pdf)
+<use figure/unnamed-chunk-2-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-2-1.pdf  used on input line 122.
+(pdftex.def)             Requested size: 440.38033pt x 440.3909pt.
  [1
 
 {C:/Users/Chris/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-(assignment_2.aux) ) 
+[2 <./figure/unnamed-chunk-2-1.pdf>] [3] (assignment_2.aux) ) 
 Here is how much of TeX's memory you used:
- 4794 strings out of 492970
- 71233 string characters out of 3126593
- 138307 words of memory out of 3000000
- 8542 multiletter control sequences out of 15000+200000
- 42012 words of font info for 57 fonts, out of 3000000 for 9000
+ 4806 strings out of 492970
+ 71484 string characters out of 3126593
+ 143307 words of memory out of 3000000
+ 8549 multiletter control sequences out of 15000+200000
+ 50840 words of font info for 60 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,6n,32p,281b,202s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/Chris/AppData/Local/Programs/MiKTeX 2.9/fonts/enc
-/dvips/lm/lm-rm.enc}{C:/Users/Chris/AppData/Local/Programs/MiKTeX 2.9/fonts/enc
-/dvips/lm/lm-mathex.enc}{C:/Users/Chris/AppData/Local/Programs/MiKTeX 2.9/fonts
-/enc/dvips/lm/lm-mathsy.enc}{C:/Users/Chris/AppData/Local/Programs/MiKTeX 2.9/f
-onts/enc/dvips/lm/lm-mathit.enc}{C:/Users/Chris/AppData/Local/Programs/MiKTeX 2
-.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Users/Chris/AppData/Local/Programs/MiKTeX 2
-.9/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Chris/AppData/Local/Programs/MiKT
-eX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Users/Chris/AppData/Local/Programs/
-MiKTeX 2.9/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Chris/AppData/Local/Progr
-ams/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Chris/AppData/Local/Pr
-ograms/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Users/Chris/AppData/Local
-/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Users/Chris/AppData/Lo
-cal/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Users/Chris/AppData/
-Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/Chris/AppDat
-a/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Chris/Ap
-pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb>
-Output written on assignment_2.pdf (1 page, 134157 bytes).
+ 41i,15n,32p,281b,311s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/Chris/Ap
+pData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/Chris/Ap
+pData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Users/Chri
+s/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/
+Chris/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Us
+ers/Chris/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Us
+ers/Chris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C
+:/Users/Chris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pf
+b><C:/Users/Chris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi1
+2.pfb><C:/Users/Chris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/l
+mmi8.pfb><C:/Users/Chris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/l
+m/lmr12.pfb><C:/Users/Chris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
+c/lm/lmr17.pfb><C:/Users/Chris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/lm/lmr6.pfb><C:/Users/Chris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
+public/lm/lmr8.pfb><C:/Users/Chris/AppData/Local/Programs/MiKTeX 2.9/fonts/type
+1/public/lm/lmsy10.pfb><C:/Users/Chris/AppData/Local/Programs/MiKTeX 2.9/fonts/
+type1/public/lm/lmsy8.pfb>
+Output written on assignment_2.pdf (3 pages, 152384 bytes).
 PDF statistics:
- 53 PDF objects out of 1000 (max. 8388607)
+ 68 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

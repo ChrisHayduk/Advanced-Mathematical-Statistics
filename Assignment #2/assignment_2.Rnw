@@ -64,14 +64,69 @@ suppressMessages(library(scatterplot3d, quietly=TRUE, warn.conflicts = FALSE,ver
 
 \item $f(x_1, x_2) = \frac{1}{2\pi\sqrt{1.5}} \times \exp\{-\frac{2}{3}[\left(\frac{x_1}{\sqrt{2}}\right)^2 + \left(x_2 - 2\right)^2 - \left(\frac{x_1}{\sqrt{2}}\right)\left(x_2 - 2\right)]\}$
 
-\item
+\item We have that $\rho_{12} = 0.5 \implies \sigma_{12} = 0.5(\sqrt{\sigma_{11}\sigma_{22}}) = 0.5(\sqrt{2})$. So,
+\begin{align*}
+&(\vct{x} - \vct{\mu})'\Sigma^{-1}(\vct{x} - \vct{\mu})\\
+&= \begin{bmatrix} x_1 - \mu_1 & x_2 - \mu_2 \end{bmatrix} \frac{1}{\sigma_{11}\sigma_{22}-\sigma_{12}^2} \begin{bmatrix} \sigma_{22} & -\sigma_{12} \\ -\sigma_{12} & \sigma_{11} \end{bmatrix} \begin{bmatrix} x_1 - \mu_1 \\ x_2 - \mu_2 \end{bmatrix}\\
+&= \begin{bmatrix} x_1 & x_2 - 2 \end{bmatrix} \frac{1}{2-(0.5\sqrt{2})^2} \begin{bmatrix} 1 & -0.5\sqrt{2} \\ -0.5\sqrt{2} & 2 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 - 2 \end{bmatrix}\\
+&= \begin{bmatrix} \frac{2}{3} x_1 + (\frac{-\sqrt{2}}{3})(x_2 - 2) & (\frac{-\sqrt{2}}{3})(x_1 ) + \frac{4}{3}(x_2 - 2) \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 - 2 \end{bmatrix}\\
+&= x_1\left(\frac{2}{3} x_1 + \left(\frac{-\sqrt{2}}{3}\right)(x_2 - 2)\right) + (x_2 - 2)\left(\left(\frac{-\sqrt{2}}{3}\right)x_1 + \frac{4}{3}(x_2 - 2)\right)\\
+&= \frac{2}{3}x_1^2 + \left(\frac{-\sqrt{2}}{3}\right)(x_2 - 2)x_1 + (x_2 - 2)\left(\frac{-\sqrt{2}}{3}\right)x_1 + \frac{4}{3}(x_2 - 2)^2\\
+&= \frac{2}{3}x_1^2 + \frac{-2\sqrt{2}(x_2x_1 - 2x_1)}{3} + \frac{4}{3}x_2^2 - \frac{16}{3}x_2 + \frac{16}{3}
+\end{align*}
 
-\item
+\item $c^2 = \chi^2_2(0.5) \approx 1.386294$. So we take 
+\begin{align*}
+\frac{2}{3}x_1^2 + \frac{-2\sqrt{2}(x_2x_1 - 2x_1)}{3} + \frac{4}{3}x_2^2 - \frac{16}{3}x_2 + \frac{16}{3} = 1.386294
+\end{align*}
+to be the surface of the ellipsoid containing 50\% of the probability. The graph for this can be seen below.
+
+<<fig=TRUE, echo=F>>=
+contour_density <- function(x_1, x_2){
+  res <- (2/3)*x_1^2 + (-2*sqrt(2)*(x_2*x_1 - 2*x_1))/3 + (4/3)*x_2^2 - 16/3 * x_2 + 16/3
+  return(res)
+}
+
+mat <- outer(seq(-3, 3, length=100),  
+              seq(0, 4, length=100), 
+              function(x,y) contour_density(x, y) )
+
+require(reshape2)
+require(tidyverse)
+require(latex2exp)
+mmat <- melt(mat)
+
+mmat$Var1 <- rep((seq(-3, 3, length=100)), 100)
+
+mmat$Var2 <- rep((seq(0, 4, length = 100)), each=100)
+
+g <- ggplot(mmat, aes(x=Var1, y=Var2, z=value) )
+g <- g+stat_contour(aes(col = ..level..), breaks=seq(1.386, 1.386, .1) )
+g <- g + scale_colour_continuous(low = "#000000", high = "#000000") # make black
+g <- g + xlab(TeX('$X_1$')) + ylab(TeX('$X_2$')) + ggtitle("Contour Plot Containing 50% of the Probability") +
+  theme(plot.title = element_text(hjust = 0.5))
+g
+
+@
 
 \end{enumerate}
 
 \begin{problem}{4.3}
 \end{problem}
+
+\begin{enumerate}[a)]
+
+\item
+
+\item
+
+\item
+
+\item
+
+\item
+
+\end{enumerate}
 
 \begin{problem}{4.4}
 \end{problem}

@@ -100,14 +100,47 @@
 
 \item $f(x_1, x_2) = \frac{1}{2\pi\sqrt{1.5}} \times \exp\{-\frac{2}{3}[\left(\frac{x_1}{\sqrt{2}}\right)^2 + \left(x_2 - 2\right)^2 - \left(\frac{x_1}{\sqrt{2}}\right)\left(x_2 - 2\right)]\}$
 
-\item
+\item We have that $\rho_{12} = 0.5 \implies \sigma_{12} = 0.5(\sqrt{\sigma_{11}\sigma_{22}}) = 0.5(\sqrt{2})$. So,
+\begin{align*}
+&(\vct{x} - \vct{\mu})'\Sigma^{-1}(\vct{x} - \vct{\mu})\\
+&= \begin{bmatrix} x_1 - \mu_1 & x_2 - \mu_2 \end{bmatrix} \frac{1}{\sigma_{11}\sigma_{22}-\sigma_{12}^2} \begin{bmatrix} \sigma_{22} & -\sigma_{12} \\ -\sigma_{12} & \sigma_{11} \end{bmatrix} \begin{bmatrix} x_1 - \mu_1 \\ x_2 - \mu_2 \end{bmatrix}\\
+&= \begin{bmatrix} x_1 & x_2 - 2 \end{bmatrix} \frac{1}{2-(0.5\sqrt{2})^2} \begin{bmatrix} 1 & -0.5\sqrt{2} \\ -0.5\sqrt{2} & 2 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 - 2 \end{bmatrix}\\
+&= \begin{bmatrix} \frac{2}{3} x_1 + (\frac{-\sqrt{2}}{3})(x_2 - 2) & (\frac{-\sqrt{2}}{3})(x_1 ) + \frac{4}{3}(x_2 - 2) \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 - 2 \end{bmatrix}\\
+&= x_1\left(\frac{2}{3} x_1 + \left(\frac{-\sqrt{2}}{3}\right)(x_2 - 2)\right) + (x_2 - 2)\left(\left(\frac{-\sqrt{2}}{3}\right)x_1 + \frac{4}{3}(x_2 - 2)\right)\\
+&= \frac{2}{3}x_1^2 + \left(\frac{-\sqrt{2}}{3}\right)(x_2 - 2)x_1 + (x_2 - 2)\left(\frac{-\sqrt{2}}{3}\right)x_1 + \frac{4}{3}(x_2 - 2)^2\\
+&= \frac{2}{3}x_1^2 + \frac{-2\sqrt{2}(x_2x_1 - 2x_1)}{3} + \frac{4}{3}x_2^2 - \frac{16}{3}x_2 + \frac{16}{3}
+\end{align*}
 
-\item
+\item $c^2 = \chi^2_2(0.5) \approx 1.386294$. So we take 
+\begin{align*}
+\frac{2}{3}x_1^2 + \frac{-2\sqrt{2}(x_2x_1 - 2x_1)}{3} + \frac{4}{3}x_2^2 - \frac{16}{3}x_2 + \frac{16}{3} = 1.386294
+\end{align*}
+to be the surface of the ellipsoid containing 50\% of the probability. The graph for this can be seen below.
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-2-1} 
+
+\end{knitrout}
 
 \end{enumerate}
 
 \begin{problem}{4.3}
 \end{problem}
+
+\begin{enumerate}[a)]
+
+\item
+
+\item
+
+\item
+
+\item
+
+\item
+
+\end{enumerate}
 
 \begin{problem}{4.4}
 \end{problem}
