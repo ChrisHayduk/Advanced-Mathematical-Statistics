@@ -1,6 +1,6 @@
 \documentclass[12pt]{article}\usepackage[]{graphicx}\usepackage[]{color}
-% maxwidth is the original width if it is less than linewidth
-% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+%% maxwidth is the original width if it is less than linewidth
+%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
 \makeatletter
 \def\maxwidth{ %
   \ifdim\Gin@nat@width>\linewidth
@@ -420,10 +420,126 @@ and,
 \begin{problem}{4.10}
 \end{problem}
 
+\begin{enumerate}[a)]
+
+\item We know that
+\begin{align*}
+\begin{vmatrix}
+\vct{A} & \vct{0}\\
+\vct{0'} & \vct{B}
+\end{vmatrix}
+= \begin{vmatrix}
+\vct{A} & \vct{0}\\
+\vct{0'} & \vct{I}
+\end{vmatrix}
+\begin{vmatrix}
+\vct{I} & \vct{0}\\
+\vct{0'} & \vct{B}
+\end{vmatrix}
+\end{align*}
+
+If we expand the determinant of the first matrix in the above expression, which we will denote as $\vct{C}$ and assume it is $k \times k$, by the last row, we get
+\begin{align*}
+\begin{vmatrix}
+\vct{A} & \vct{0}\\
+\vct{0'} & \vct{I}
+\end{vmatrix} = |\vct{C}| = \sum_{j=1}^k c_{kj} |\vct{C}_{kj}|(-1)^{1+j}
+\end{align*}
+
+Then we have 1 times a determinant of the same form, with the order of $\vct{I}$ reduced by one. If we continue this procedure, we get $1 \times |\vct{A}|$.
+
+Similarly, if we expand the determinant of the second matrix in the above expression, which we will denote as $\vct{D}$ and assume it is $k \times k$, by the first row, we get
+\begin{align*}
+\begin{vmatrix}
+\vct{I} & \vct{0}\\
+\vct{0'} & \vct{B}
+\end{vmatrix} = |\vct{D}| = \sum_{j=1}^k c_{1j} |\vct{C}_{1j}|(-1)^{1+j}
+\end{align*}
+
+Then we have 1 times a determinant of the same form, with the order of $\vct{I}$ reduced by one. If we continue this procedure, we get $1 \times |\vct{B}|$.
+
+Thus, we have,
+\begin{align*}
+\begin{vmatrix}
+\vct{A} & \vct{0}\\
+\vct{0'} & \vct{B}
+\end{vmatrix}
+= \begin{vmatrix}
+\vct{A} & \vct{0}\\
+\vct{0'} & \vct{I}
+\end{vmatrix}
+\begin{vmatrix}
+\vct{I} & \vct{0}\\
+\vct{0'} & \vct{B}
+\end{vmatrix} = |\vct{A}||\vct{B}|
+\end{align*}
+
+\item We know that
+\begin{align*}
+\begin{vmatrix}
+\vct{A} & \vct{C}\\
+\vct{0'} & \vct{B}
+\end{vmatrix}
+= \begin{vmatrix}
+\vct{A} & \vct{0}\\
+\vct{0'} & \vct{B}
+\end{vmatrix}
+\begin{vmatrix}
+\vct{I} & \vct{\vct{A}^{-1}\vct{C}}\\
+\vct{0'} & \vct{I}
+\end{vmatrix}
+\end{align*}
+
+However, if we expand \begin{vmatrix}
+\vct{I} & \vct{\vct{A}^{-1}\vct{C}}\\
+\vct{0'} & \vct{I}
+\end{vmatrix} by the last row, we get $1$. 
+
+Thus, from part (a), we have,
+\begin{align*}
+\begin{vmatrix}
+\vct{A} & \vct{C}\\
+\vct{0'} & \vct{B}
+\end{vmatrix}
+= \begin{vmatrix}
+\vct{A} & \vct{0}\\
+\vct{0'} & \vct{B}
+\end{vmatrix}
+\begin{vmatrix}
+\vct{I} & \vct{\vct{A}^{-1}\vct{C}}\\
+\vct{0'} & \vct{I}
+\end{vmatrix} = |\vct{A}||\vct{B}|1 = |\vct{A}||\vct{B}|
+\end{align*}
+
+\end{enumerate}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{problem}{4.11}
 \end{problem}
+
+First, partition $\vct{A}$ such that,
+\begin{align*}
+\vct{A} = \begin{bmatrix} \vct{A}_{11} & \vct{A}_{12} \\ \vct{A}_{21} & \vct{A}_{22} \end{bmatrix}
+\end{align*}
+
+Then we have that,
+\begin{align*}
+\begin{bmatrix} \vct{I} & -\vct{A}_{12}\vct{A}_{22}^{-1} \\ \vct{0'} & \vct{I}\end{bmatrix}\begin{bmatrix} \vct{A}_{11} & \vct{A}_{12} \\ \vct{A}_{21} & \vct{A}_{22} \end{bmatrix} = \begin{bmatrix} \vct{A}_{11} - \vct{A}_{21}\vct{A}_{11}^{-1}\vct{A}_{21} & \vct{A}_{12} - \vct{A}_{12}\vct{A}_{22}^{-1}\vct{A}_{21} \\ \vct{A}_{21} & \vct{A}_{22} \end{bmatrix}
+\end{align*}
+
+Moreover, we have,
+\begin{align*}
+\begin{bmatrix} \vct{A}_{11} - \vct{A}_{21}\vct{A}_{11}^{-1}\vct{A}_{21} & \vct{A}_{12} - \vct{A}_{12}\vct{A}_{22}^{-1}\vct{A}_{21} \\ \vct{A}_{21} & \vct{A}_{22} \end{bmatrix} \begin{bmatrix} \vct{I} &  \vct{0} \\ -\vct{A}_{22}^{-1}\vct{A}_{21} & \vct{I} \end{bmatrix} = \begin{bmatrix} \vct{A}_{11} - \vct{A}_{12}\vct{A}_{22}^{-1}\vct{A}_{21} & \vct{0} \\ \vct{)} & \vct{A}_{22}
+\end{align*}
+
+Thus, taking determinants on both sides and using the result from Exercise 4.10, we have,
+\begin{align*}
+\begin{vmatrix} \vct{I} & -\vct{A}_{12}\vct{A}_{22}^{-1} \\ \vct{0'} & \vct{I}\end{vmatrix}\begin{vmatrix} \vct{A}_{11} & \vct{A}_{12} \\ \vct{A}_{21} & \vct{A}_{22} \end{vmatrix}\begin{vmatrix} \vct{I} &  \vct{0} \\ -\vct{A}_{22}^{-1}\vct{A}_{21} & \vct{I} \end{vmatrix} &= 1 |\vct{A}| 1\\
+&= |\vct{A}|\\
+&= \begin{vmatrix} \vct{A}_{11} - \vct{A}_{12}\vct{A}_{22}^{-1}\vct{A}_{21} & \vct{0} \\ \vct{0'} & \vct{A}_{22} \end{vmatrix}\\
+&= |\vct{A}_{22}||\vct{A}_{11} - \vct{A}_{12}\vct{A}_{22}^{-1}\vct{A}_{21}|
+\end{align*}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -434,6 +550,24 @@ and,
 
 \begin{problem}{4.13}
 \end{problem}
+
+\begin{enumerate}[a)]
+
+\item First, partition $\vct{\Sigma}$ such that,
+\begin{align*}
+\vct{\Sigma} = \begin{bmatrix} \vct{\Sigma}_{11} & \vct{\Sigma}_{12} \\ \vct{\Sigma}_{21} & \vct{\Sigma}_{22} \end{bmatrix}
+\end{align*}
+
+Then we can apply the answer to problem 4.11, which yields,
+\begin{align*}
+|\vct{\Sigma}| = |\vct{\Sigma}_{22}||\vct{\Sigma}_{11} - \vct{\Sigma}_{12}\vct{\Sigma}_{22}^{-1}\vct{\Sigma}_{21}|
+\end{align*}
+
+\item 
+
+\item
+
+\end{enumerate}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -450,29 +584,120 @@ and,
 \begin{problem}{4.16}
 \end{problem}
 
+\begin{enumerate}[a)]
+
+\item By Result 4.8, we have
+\begin{align*}
+\vct{\mu}_{V_1} = \left(\frac{1}{4} - \frac{1}{4} + \frac{1}{4} - \frac{1}{4}\right)\vct{\mu} = \vct{0}\\
+\vct{\mu}_{V_2} = \left(\frac{1}{4} + \frac{1}{4} - \frac{1}{4} - \frac{1}{4}\right)\vct{\mu} = \vct{0}
+\end{align*}
+
+and
+
+\begin{align*}
+\vct{\Sigma}_{V_1} = \left(\frac{1}{4}^2 + \left(-\frac{1}{4}\right)^2 + \frac{1}{4}^2 + \left(-\frac{1}{4}\right)^2\right)\vct{\Sigma} = \frac{1}{4}\Sigma\\
+\vct{\Sigma}_{V_2} = \left(\frac{1}{4} + \frac{1}{4} + \left(-\frac{1}{4}\right)^2 + \left(-\frac{1}{4}\right)^2\right)\vct{\Sigma} = \frac{1}{4}\Sigma
+\end{align*}
+
+\item By Result 4.8, the joint density is given by,
+\begin{align*}
+\left(\frac{1}{4}\left(\frac{1}{4}\right) + \left(-\frac{1}{4}\right)\frac{1}{4} + \frac{1}{4}\left(-\frac{1}{4}\right) + \left(-\frac{1}{4}\right)\left(-\frac{1}{4}\right) \right)\Sigma = 0\Sigma = \vct{0}
+\end{align*}
+
+Thus, the two linear combinations are independent and have a joint $2p$-variate normal distribution.
+
+\end{enumerate}
+\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{problem}{4.17}
 \end{problem}
+
+The means of the linear combination are given by,
+\begin{align*}
+\vct{\mu}_1 = \left(\frac{1}{5} + \frac{1}{5} + \frac{1}{5} + \frac{1}{5} + \frac{1}{5}\right)\vct{\mu} = 1\vct{\mu} = \vct{\mu}\\
+\vct{\mu}_2 = \left(1 - 1 + 1 - 1 + 1\right)\vct{\mu} = 1\vct{\mu} = \vct{\mu}
+\end{align*}
+
+Similarly, the covariance matrices are given by,
+\begin{align*}
+\vct{\Sigma}_1 = \left(\frac{1}{5}^2 + \frac{1}{5}^2 + \frac{1}{5}^2 + \frac{1}{5}^2 + \frac{1}{5}^2\right)\vct{\Sigma} = \frac{1}{5}\vct{\Sigma}\\
+\vct{\Sigma}_1 = \left(1^2 + (-1)^2 + 1^2 + (-1)^2 + 1^2\right)\vct{\Sigma} = 5\vct{\Sigma}
+\end{align*}
+
+The covariance between the two linear combinations is given by,
+\begin{align*}
+\left(\frac{1}{5}(1) + \frac{1}{5}(-1) + \frac{1}{5}(1) + \frac{1}{5}(-1) + \frac{1}{5}(1)\right)\vct{\Sigma} = \frac{1}{5}\vct{\Sigma}\\
+\end{align*}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{problem}{4.18}
 \end{problem}
 
+The maximum likelihood estimate for $\vct{\mu}$ is $\overline{\vct{X}}$, given by,
+\begin{align*}
+\overline{\vct{X}} = \begin{bmatrix} (3+4+5+4)/4 \\ (6+4+7+7)/4 \end{bmatrix} = \begin{bmatrix} 4 \\ 6 \end{bmatrix}
+\end{align*}
+
+The maximum likelihood estimate for $\vct{\Sigma}$, $\hat{\vct{\Sigma}}$, is given by,
+\begin{align*}
+\hat{\vct{\Sigma}} = \frac{1}{n}\sum_{j = 1}^n\left(\vct{X}_j - \overline{\vct{X}})(\vct{X}_j - \overline{\vct{X}})'
+\end{align*}
+
+which yields,
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{verbatim}
+##           [,1]      [,2]
+## [1,] 0.6666667 0.3333333
+## [2,] 0.3333333 2.0000000
+\end{verbatim}
+\end{kframe}
+\end{knitrout}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{problem}{4.19}
 \end{problem}
+
+\begin{enumerate}[a)]
+
+\item
+
+\item $\overline{\vct{X}}$ is distributed as $N_6(\mu, (1/20)\Sigma)$.
+
+$\sqrt{n}(\overline{\vct{X}} - \vct{\mu}) = \sqrt{20}(\overline{\vct{X}} - \vct{\mu})$ is distributed as $N_6(\vct{0}, \vct{\Sigma})$.
+
+\item $(n-1)\vct{S} = 19\vct{S}$ is distributed as a Wishart random matrix with 19 degrees of freedom, ie. $W_{19}(19\vct{S}|\vct{\Sigma})$.
+
+\end{enumerate}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{problem}{4.20}
 \end{problem}
 
+By properties of the Wishart distribution, we have that $\vct{B}(19\vct{S})\vct{B}'$ is distributed as $W_{19}(\vct{B}(19\vct{S})\vct{B}' | \vct{B}\vct{\Sigma}\vct{B}')
+
+\end{enumerate}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{problem}{4.21}
 \end{problem}
+
+\begin{enumerate}[a)]
+
+\item The distribution of $\overline{\vct{X}}$ is given by $N_4(\mu, (1/60)\Sigma)$
+
+\item 
+
+\item $n(\overline{\vct{X}} - \vct{\mu})'\vct{\Sigma}^{-1}(\overline{\vct{X}} - \vct{\mu})$ has a $\chi_4^2$ distribution
+
+\item $n(\overline{\vct{X}} - \vct{\mu})'\vct{\vct{S}}^{-1}(\overline{\vct{X}} - \vct{\mu})$ has an approximately $\chi_4^2$ distribution
+
+\end{enumerate}
 
 \end{document}
