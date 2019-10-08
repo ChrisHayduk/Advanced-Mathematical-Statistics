@@ -285,7 +285,7 @@ So we have,
 
 and,
 \begin{align*}
-\vct{\Sigma} &= \vct{\Sigma}_{22} - \vct{\Sigma}_{21}\left(\vct{\Sigma}_{11})^{-1}\vct{\Sigma}_{12}\\
+\vct{\Sigma} &= \vct{\Sigma}_{22} - \vct{\Sigma}_{21}\left(\vct{\Sigma}_{11}\right)^{-1}\vct{\Sigma}_{12}\\
 &= 2 - \begin{bmatrix} 1 & 2 \end{bmatrix}\left(\begin{bmatrix} \frac{3}{2} & -\frac{1}{2} \\ -\frac{1}{2} & \frac{1}{2} \end{bmatrix} \right) \begin{bmatrix} 1 \\ 2 \end{bmatrix}\\
 &= 2 - \left(\begin{bmatrix} \frac{1}{2} & \frac{1}{2} \end{bmatrix}\right) \begin{bmatrix} 1 \\ 2 \end{bmatrix}\\
 &= 2 - \frac{3}{2} = \frac{1}{2}
@@ -367,7 +367,7 @@ and,
 \end{align*}
 
 \item Let's partition the $\vct{\Sigma}$ matrix,
-\begin{align}
+\begin{align*}
 \left[\begin{array}{@{}cc|c@{}}
     4 & 0 & -1 \\\hline
     0 & 5 & 0 \\
@@ -476,10 +476,10 @@ Thus, we have,
 \end{vmatrix}
 \end{align*}
 
-However, if we expand \begin{vmatrix}
+However, if we expand $\begin{vmatrix}
 \vct{I} & \vct{\vct{A}^{-1}\vct{C}}\\
 \vct{0'} & \vct{I}
-\end{vmatrix} by the last row, we get $1$. 
+\end{vmatrix}$ by the last row, we get $1$. 
 
 Thus, from part (a), we have,
 \begin{align*}
@@ -516,7 +516,7 @@ Then we have that,
 
 Moreover, we have,
 \begin{align*}
-\begin{bmatrix} \vct{A}_{11} - \vct{A}_{21}\vct{A}_{11}^{-1}\vct{A}_{21} & \vct{A}_{12} - \vct{A}_{12}\vct{A}_{22}^{-1}\vct{A}_{21} \\ \vct{A}_{21} & \vct{A}_{22} \end{bmatrix} \begin{bmatrix} \vct{I} &  \vct{0} \\ -\vct{A}_{22}^{-1}\vct{A}_{21} & \vct{I} \end{bmatrix} = \begin{bmatrix} \vct{A}_{11} - \vct{A}_{12}\vct{A}_{22}^{-1}\vct{A}_{21} & \vct{0} \\ \vct{)} & \vct{A}_{22}
+\begin{bmatrix} \vct{A}_{11} - \vct{A}_{21}\vct{A}_{11}^{-1}\vct{A}_{21} & \vct{A}_{12} - \vct{A}_{12}\vct{A}_{22}^{-1}\vct{A}_{21} \\ \vct{A}_{21} & \vct{A}_{22} \end{bmatrix} \begin{bmatrix} \vct{I} &  \vct{0} \\ -\vct{A}_{22}^{-1}\vct{A}_{21} & \vct{I} \end{bmatrix} = \begin{bmatrix} \vct{A}_{11} - \vct{A}_{12}\vct{A}_{22}^{-1}\vct{A}_{21} & \vct{0} \\ \vct{)} & \vct{A}_{22} \end{bmatrix}
 \end{align*}
 
 Thus, taking determinants on both sides and using the result from Exercise 4.10, we have,
@@ -628,7 +628,7 @@ The maximum likelihood estimate for $\vct{\mu}$ is $\overline{\vct{X}}$, given b
 
 The maximum likelihood estimate for $\vct{\Sigma}$, $\hat{\vct{\Sigma}}$, is given by,
 \begin{align*}
-\hat{\vct{\Sigma}} = \frac{1}{n}\sum_{j = 1}^n\left(\vct{X}_j - \overline{\vct{X}})(\vct{X}_j - \overline{\vct{X}})'
+\hat{\vct{\Sigma}} = \frac{1}{n}\sum_{j = 1}^n\left(\vct{X}_j - \overline{\vct{X}}\right)\left(\vct{X}_j - \overline{\vct{X}}\right)'
 \end{align*}
 
 which yields,
@@ -660,9 +660,7 @@ $\sqrt{n}(\overline{\vct{X}} - \vct{\mu}) = \sqrt{20}(\overline{\vct{X}} - \vct{
 \begin{problem}{4.20}
 \end{problem}
 
-By properties of the Wishart distribution, we have that $\vct{B}(19\vct{S})\vct{B}'$ is distributed as $W_{19}(\vct{B}(19\vct{S})\vct{B}' | \vct{B}\vct{\Sigma}\vct{B}')
-
-\end{enumerate}
+By properties of the Wishart distribution, we have that $\vct{B}(19\vct{S})\vct{B}'$ is distributed as $W_{19}(\vct{B}(19\vct{S})\vct{B}' | \vct{B}\vct{\Sigma}\vct{B}')$
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
