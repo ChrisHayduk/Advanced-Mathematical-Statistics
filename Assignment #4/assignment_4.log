@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.12.28)  17 OCT 2019 16:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.12.28)  17 OCT 2019 16:43
 entering extended mode
-**./assignment_2.tex
-(assignment_2.tex
+**./assignment_4.tex
+(assignment_4.tex
 LaTeX2e <2018-04-01> patch level 5
 ("C:\Users\Chris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
@@ -450,9 +450,8 @@ Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
 Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
-))
-No file assignment_2.aux.
-\openout1 = `assignment_2.aux'.
+)) (assignment_4.aux)
+\openout1 = `assignment_4.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
 LaTeX Font Info:    ... okay on input line 84.
@@ -468,6 +467,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 84.
 LaTeX Font Info:    ... okay on input line 84.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 84.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 84.
+
 ("C:\Users\Chris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
@@ -625,69 +625,90 @@ LaTeX Font Info:    Try loading font information for U+rsfs on input line 91.
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 101.
+(Font)              <12> on input line 102.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 101.
+(Font)              <8> on input line 102.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 101.
-Package color Info: Redefining color shadecolor on input line 121.
-<figure/unnamed-chunk-2-1.pdf, id=1, 505.89pt x 505.89pt>
-File: figure/unnamed-chunk-2-1.pdf Graphic file (type pdf)
-<use figure/unnamed-chunk-2-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-2-1.pdf  used on input line 122.
-(pdftex.def)             Requested size: 440.38033pt x 440.3909pt.
- [1
+(Font)              <6> on input line 102.
+
+Overfull \hbox (25.09778pt too wide) detected at line 113
+[]
+ []
+
+[1
 
 {C:/Users/Chris/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-[2 <./figure/unnamed-chunk-2-1.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 185--186
+Underfull \hbox (badness 10000) in paragraph at lines 171--172
 
  []
 
+[2]
+Overfull \hbox (0.15984pt too wide) detected at line 219
+[]
+ []
+
+Package color Info: Redefining color shadecolor on input line 224.
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 233--234
+<figure/unnamed-chunk-2-1.pdf, id=22, 505.89pt x 505.89pt>
+File: figure/unnamed-chunk-2-1.pdf Graphic file (type pdf)
+<use figure/unnamed-chunk-2-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-2-1.pdf  used on input line 225.
+(pdftex.def)             Requested size: 469.75502pt x 469.76265pt.
+
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 225--226
+[][] 
+ []
+
+[4 <./figure/unnamed-chunk-2-1.pdf>]
+Overfull \hbox (18.43718pt too wide) detected at line 266
+[]
+ []
+
+Package color Info: Redefining color shadecolor on input line 271.
+<figure/unnamed-chunk-3-1.pdf, id=33, 505.89pt x 505.89pt>
+File: figure/unnamed-chunk-3-1.pdf Graphic file (type pdf)
+<use figure/unnamed-chunk-3-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-3-1.pdf  used on input line 272.
+(pdftex.def)             Requested size: 469.75502pt x 469.76265pt.
+
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 272--273
+[][] 
+ []
+
+[5] [6 <./figure/unnamed-chunk-3-1.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 296--297
 
  []
 
-[4] [5] [6] [7] [8] [9] [10]
-Package color Info: Redefining color shadecolor on input line 650.
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 651.
-
-
-("C:\Users\Chris\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-[11] [12] (assignment_2.aux) ) 
+[7] (assignment_4.aux) ) 
 Here is how much of TeX's memory you used:
- 4844 strings out of 492970
- 72055 string characters out of 3126593
- 149307 words of memory out of 3000000
- 8585 multiletter control sequences out of 15000+200000
- 51158 words of font info for 61 fonts, out of 3000000 for 9000
+ 4811 strings out of 492970
+ 71660 string characters out of 3126593
+ 145307 words of memory out of 3000000
+ 8553 multiletter control sequences out of 15000+200000
+ 50840 words of font info for 60 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,15n,32p,416b,313s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/Chris/AppData/Local/Programs/MiKTeX 2.9
-/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/Chris/AppData/Local/Programs/MiKTeX 2.9
-/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/Chris/AppData/Local/Programs/MiKTeX 2.9
-/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Users/Chris/AppData/Local/Programs/MiKTeX
- 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/Chris/AppData/Local/Programs/Mi
-KTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}<C:/Users/Chris/AppData/Local/Program
-s/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Chris/AppData/Local/Pro
-grams/MiKTeX 2.9/fonts/type1/public/lm/lmbx8.pfb><C:/Users/Chris/AppData/Local/
-Programs/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Users/Chris/AppData/Lo
-cal/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Chris/AppDat
-a/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Chris/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Users/Chris/
-AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Users/Chr
-is/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Users/C
-hris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users
-/Chris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/U
-sers/Chris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C
-:/Users/Chris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pf
-b>
-Output written on assignment_2.pdf (12 pages, 223476 bytes).
+ 41i,18n,32p,281b,306s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/Chris/AppData/Local/Programs/MiKTeX 2.9/fonts
+/enc/dvips/lm/lm-rm.enc}{C:/Users/Chris/AppData/Local/Programs/MiKTeX 2.9/fonts
+/enc/dvips/lm/lm-mathit.enc}{C:/Users/Chris/AppData/Local/Programs/MiKTeX 2.9/f
+onts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/Chris/AppData/Local/Programs/MiKTeX 2
+.9/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Users/Chris/AppData/Local/Programs/MiKT
+eX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Users/Chris/AppData/Local/Programs/MiKT
+eX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Chris/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/public/lm/lmbx8.pfb><C:/Users/Chris/AppData/Local/Progra
+ms/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Users/Chris/AppData/Local/Pr
+ograms/MiKTeX 2.9/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Chris/AppData/Loca
+l/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Chris/AppData/L
+ocal/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Users/Chris/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Users/Chris/App
+Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Users/Chris/A
+ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/Chris
+/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/C
+hris/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb>
+Output written on assignment_4.pdf (7 pages, 208488 bytes).
 PDF statistics:
- 105 PDF objects out of 1000 (max. 8388607)
+ 95 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
